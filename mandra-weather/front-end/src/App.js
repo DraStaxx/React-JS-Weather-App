@@ -16,6 +16,13 @@ function App() {
 			setLocation("");
 		}
 	};
+ //This is to connect to the frontend but not sure why is not working
+	axios.post('http://localhost:9999/app/signup')
+            .then(response => console.log(response.data))
+
+			//window.location = '/Home'
+
+           
 
 	return (
 		<div className="app">
